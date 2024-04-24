@@ -23,6 +23,12 @@ config BR2_PACKAGE_SQLITE_ENABLE_COLUMN_METADATA
 	  enabled to acces meta-data about tables and queries (see
 	  https://sqlite.org/compile.html).
 
+config BR2_PACKAGE_SQLITE_ENABLE_UPDATE_DELETE_LIMIT
+	bool "Enable the LIMIT clause for DELETE/UPDATE statements"
+	default y
+	help
+	  See https://www.sqlite.org/compile.html#enable_update_delete_limit
+
 config BR2_PACKAGE_SQLITE_ENABLE_FTS3
 	bool "Enable version 3 of the full-text search engine"
 	help
